@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.112" tests="85" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/davidkatunin/Desktop/SE333-Assignment4/target/test-classes:/Users/davidkatunin/Desktop/SE333-Assignment4/target/classes:/Users/davidkatunin/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/davidkatunin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/davidkatunin/.m2/repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar:/Users/davidkatunin/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/Users/davidkatunin/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/davidkatunin/Desktop/SE333-Assignment4/target/surefire/surefirebooter4907892250479541418.jar /Users/davidkatunin/Desktop/SE333-Assignment4/target/surefire 2025-02-18T18-38-24_388-jvmRun1 surefire17192606647982188009tmp surefire_2214940270879109131083tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/davidkatunin/Desktop/SE333-Assignment4/target/test-classes:/Users/davidkatunin/Desktop/SE333-Assignment4/target/classes:/Users/davidkatunin/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/davidkatunin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/davidkatunin/.m2/repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar:/Users/davidkatunin/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/Users/davidkatunin/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/davidkatunin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/davidkatunin/Desktop/SE333-Assignment4"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/davidkatunin/Desktop/SE333-Assignment4/target/surefire/surefirebooter4907892250479541418.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="davidkatunin"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/davidkatunin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/rq/g2m085wn2t106jp356pxfdjr0000gn/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/davidkatunin/Desktop/SE333-Assignment4"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/davidkatunin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testIsoFileDefaults[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.013"/>
+  <testcase name="testUTF8FileCRBreaks[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.005"/>
+  <testcase name="testUnsupportedEncodingUTF16[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.005"/>
+  <testcase name="testGBK[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.004"/>
+  <testcase name="testEmptyFile[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testFileSizeIsExactMultipleOfBlockSize[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.004"/>
+  <testcase name="testxWindows949File[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.003"/>
+  <testcase name="testxWindows950File[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.002"/>
+  <testcase name="testUTF8FileWindowsBreaks[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.004"/>
+  <testcase name="testUTF16BEFile[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.006"/>
+  <testcase name="testIsoFileManyWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF16LEFile[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.005"/>
+  <testcase name="testShiftJISFile[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testWindows31jFile[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUnsupportedEncodingBig5[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF8File[BlockSize=1]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.003"/>
+  <testcase name="testIsoFileDefaults[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF8FileCRBreaks[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUnsupportedEncodingUTF16[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testGBK[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testEmptyFile[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testFileSizeIsExactMultipleOfBlockSize[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testxWindows949File[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testxWindows950File[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF8FileWindowsBreaks[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF16BEFile[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testIsoFileManyWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16LEFile[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.002"/>
+  <testcase name="testShiftJISFile[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testWindows31jFile[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUnsupportedEncodingBig5[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF8File[BlockSize=3]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testIsoFileDefaults[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileCRBreaks[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUnsupportedEncodingUTF16[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testGBK[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testEmptyFile[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testFileSizeIsExactMultipleOfBlockSize[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testxWindows949File[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testxWindows950File[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaks[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16BEFile[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testIsoFileManyWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16LEFile[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testShiftJISFile[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testWindows31jFile[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUnsupportedEncodingBig5[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8File[BlockSize=8]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testIsoFileDefaults[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileCRBreaks[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUnsupportedEncodingUTF16[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testGBK[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testEmptyFile[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testFileSizeIsExactMultipleOfBlockSize[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testxWindows949File[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testxWindows950File[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaks[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16BEFile[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testIsoFileManyWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16LEFile[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testShiftJISFile[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testWindows31jFile[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUnsupportedEncodingBig5[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8File[BlockSize=256]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testIsoFileDefaults[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF8FileCRBreaks[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUnsupportedEncodingUTF16[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testGBK[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testEmptyFile[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testFileSizeIsExactMultipleOfBlockSize[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testUTF8FileWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testxWindows949File[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testxWindows950File[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8FileWindowsBreaks[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16BEFile[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+  <testcase name="testIsoFileManyWindowsBreaksSmallBlockSize2VerifyBlockSpanningNewLines[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF16LEFile[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testShiftJISFile[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testWindows31jFile[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUnsupportedEncodingBig5[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0"/>
+  <testcase name="testUTF8File[BlockSize=4,096]" classname="org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize" time="0.001"/>
+</testsuite>

@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1739925502941
+Build-Jdk: 23.0.2
+Built-By: davidkatunin
+Bundle-Description: The Apache Commons IO library contains utility class
+ es, stream implementations, file filters,file comparators, endian trans
+ formation classes, and much more.
+Bundle-DocURL: http://commons.apache.org/proper/commons-io/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons IO
+Bundle-SymbolicName: org.apache.commons.commons-io
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.7.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.io;version="1.4.9999",org.apache.comm
+ ons.io.comparator;version="1.4.9999",org.apache.commons.io.filefilter;v
+ ersion="1.4.9999",org.apache.commons.io.input;version="1.4.9999",org.ap
+ ache.commons.io.output;version="1.4.9999",org.apache.commons.io.input.b
+ uffer;version="2.7.0.SNAPSHOT",org.apache.commons.io.monitor;version="2
+ .7.0.SNAPSHOT",org.apache.commons.io.serialization;version="2.7.0.SNAPS
+ HOT",org.apache.commons.io;version="2.7.0.SNAPSHOT",org.apache.commons.
+ io.comparator;version="2.7.0.SNAPSHOT",org.apache.commons.io.filefilter
+ ;version="2.7.0.SNAPSHOT",org.apache.commons.io.input;version="2.7.0.SN
+ APSHOT",org.apache.commons.io.output;version="2.7.0.SNAPSHOT"
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=LI
+ CENSE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.5.0.201709291849
