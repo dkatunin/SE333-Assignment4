@@ -113,4 +113,16 @@ public class CountingOutputStreamTest {
         }
     }
 
+    @Test
+    public void testGetCountWithLargeByteCount() throws IOException {
+        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        final CountingOutputStream cos = new CountingOutputStream(baos);
+        for (int i = 0; i < 100000; i++) {
+            cos.write(0);
+        }
+
+        assertEquals("CountingOutputStream.getCount()", 100000, cos.getCount());
+
+        cos.close();
+    }
 }

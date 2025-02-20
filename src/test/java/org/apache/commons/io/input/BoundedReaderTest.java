@@ -240,4 +240,14 @@ public class BoundedReaderTest {
         }
     }
 
+    @Test
+    public void testMarkedReadOnEOF() throws IOException {
+        try (final BoundedReader mr = new BoundedReader(new StringReader("abcd"), 10)) {
+            mr.read();
+            mr.mark(2);
+            mr.read();
+            mr.read();
+            assertEquals(-1, mr.read());
+        }
+    }
 }

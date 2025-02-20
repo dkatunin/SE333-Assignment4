@@ -23,6 +23,8 @@ import java.io.IOException;
 import java.io.Reader;
 
 import org.junit.Test;
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
 
 /**
  * Test case for {@link CharSequenceReader}.
@@ -113,6 +115,41 @@ public class CharSequenceReaderTest {
             checkArray(new char[] { 'B', 'a', 'r', 'F', 'o', 'o', NONE }, chars);
             assertEquals(-1, reader.read(chars));
         }
+    }
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void testChangedConditionalRead() throws IOException {
+        final char[] chars = new char[10];
+        try (final Reader reader = new CharSequenceReader("FooBar")) {
+            thrown.expect(IndexOutOfBoundsException.class);
+            reader.read(chars, -1, 3);
+        }
+        try (final Reader reader = new CharSequenceReader("FooBar")) {
+            thrown.expect(IndexOutOfBoundsException.class);
+            reader.read(chars, 3, -1);
+        }
+        try (final Reader reader = new CharSequenceReader("FooBar")) {
+            thrown.expect(IndexOutOfBoundsException.class);
+            reader.read(chars, 8, 5);
+        }
+        try (final Reader reader = new CharSequenceReader("FooBar")) {
+            thrown.expect(IndexOutOfBoundsException.class);
+            reader.read(chars, 10, 0);
+        }
+        try (final Reader reader = new CharSequenceReader("FooBar")) {
+            thrown.expect(IndexOutOfBoundsException.class);
+            reader.read(chars, 5, 5);
+        }
+    }
+
+    @Test
+    public void testChangedBoundarySkip() throws IOException {
+        final Reader reader = new CharSequenceReader("FooBar");
+        thrown.expect(IllegalArgumentException.class);
+        reader.skip(-2);
     }
 
     private void checkRead(final Reader reader, final String expected) throws IOException {

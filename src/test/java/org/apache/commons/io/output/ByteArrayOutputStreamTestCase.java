@@ -219,5 +219,10 @@ public class ByteArrayOutputStreamTestCase {
         baout.close();
         baout1.close();
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeInitialization() {
+        new ByteArrayOutputStream(-1);
+    }
 }
 

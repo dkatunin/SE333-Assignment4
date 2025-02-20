@@ -216,4 +216,16 @@ public class CountingInputStreamTest {
         }
     }
 
+    @Test
+    public void testExceptionThrownForByteCount() throws IOException {
+        CountingInputStream cis = new CountingInputStream(new NullInputStream((long) Integer.MAX_VALUE + 1));
+        IOUtils.copyLarge(cis, new NullOutputStream());
+        assertEquals((long) Integer.MAX_VALUE + 1, cis.getByteCount());
+        try {
+            cis.getCount();
+        } catch (ArithmeticException e) {
+            assertEquals("The byte count " + ((long) Integer.MAX_VALUE + 1) + " is too large to be converted to an int", e.getMessage());
+        }
+    }
+
 }

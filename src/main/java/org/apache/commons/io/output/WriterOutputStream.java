@@ -303,7 +303,7 @@ public class WriterOutputStream extends OutputStream {
      *
      * @throws IOException if an I/O error occurs
      */
-    private void flushOutput() throws IOException {
+    void flushOutput() throws IOException {
         if (decoderOut.position() > 0) {
             writer.write(decoderOut.array(), 0, decoderOut.position());
             decoderOut.rewind();

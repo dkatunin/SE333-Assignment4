@@ -146,4 +146,13 @@ public class WriterOutputStreamTest {
         assertEquals("abc", writer.toString());
         out.close();
     }
+
+    @Test
+    public void testFlushPositionExactly0() throws IOException {
+        final StringWriter writer = new StringWriter();
+        final WriterOutputStream out = new WriterOutputStream(writer, "us-ascii", 1024, false);
+        out.flushOutput();
+        assertEquals("", writer.toString());
+    }
+
 }
